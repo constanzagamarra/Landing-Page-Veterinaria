@@ -23,6 +23,7 @@ a {
 #Logo{
     width: 70px;
     background-color: #028892!important;
+    border:none;
 }
 
 a{ 
@@ -31,7 +32,7 @@ a{
 
 #header{
     background-color: var(--main-color);
-    min-height:100vh;
+    min-height:80vh;
 }
 
 #contactobo{
@@ -68,16 +69,20 @@ a{
 
 .card{
     color: rgb(58, 58, 58);
+ 
 }
 
 
 #servicios {
-    background-color: var(--details);
-    background:  url('./img/veterinarian.jpg');
-    background-size:cover ;
-    height: 100vh;
-
+ 
+    background-size: 100%;
+    background-color: var(--buttons);
+    background-image:url(./img/veterinarian.jpg) ;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-attachment:scroll;
 }
+
 
 #servicios img{
     width: 50%;
@@ -90,4 +95,16 @@ a{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+  }
+
+
+  .send{
+      background-color: var(--main-color)!important;
+      border: 1px solid var(--main-color)!important;
+      font-weight: bold;
+  }
+
+  footer{
+      background-color: var(--main-color)!important;
+      color: white!important;
   }

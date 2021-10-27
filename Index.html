@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="Estilos.css">
       <!--Bootstrap-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
+    <!--FontAwesome-->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+
+
+    </head>
+   
 
 
 
@@ -18,7 +24,8 @@
     
 <!--NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="NAV">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" class="img-thumbnail" id= "Logo"></a>
+        <a class="navbar-brand" href="Index.html"><img src="./img/logo.png" class="img-thumbnail" id= "Logo"></a>
+   
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -73,7 +80,8 @@
 <!--Nosotros--> 
 <section id="nosotros">
     <div class="container  py-1  mt-3">
-        <h4>Nosotros</h4>
+        <h4 style="text-align: center;">Nosotros</h4>
+        <br>
         <div class="row  align-self-center" style="background-color: white;">
 
             <div class="col-sm  align-self-center">
@@ -81,6 +89,7 @@
                     <img class="card-img-top" src="./img/vete1.jpg" alt="Card image cap">
                     <div class="card-body  align-self-center">
                         <h5 class="card-title">Nombre del profesional</h5>
+                        <p style="text-align: center;">Veterinario</p>
                     </div>
                   </div>
             </div>
@@ -90,6 +99,7 @@
                     <img class="card-img-top" src="./img/vete2.jpg" alt="Card image cap">
                     <div class="card-body  align-self-center">
                         <h5 class="card-title">Nombre del profesional</h5>
+                        <p style="text-align: center;">Veterinario</p>
                     </div>
                   </div>
             </div>
@@ -99,6 +109,7 @@
                     <img class="card-img-top" src="./img/vete3.jpg" alt="Card image cap">
                     <div class="card-body  align-self-center">
                         <h5 class="card-title">Nombre del profesional</h5>
+                        <p style="text-align: center;">Veterinario</p>
                     </div>
                   </div>
             </div>
@@ -115,16 +126,20 @@
 <section id="servicios">
     <div class="container  py-1  mt-3 abs-center">
         <div class="row align-self-center">
+
+            <div class="col-sm ">
+                <img src="./img/corazon.png" class="mx-auto d-block" alt="">
+                <h3 style="text-align: center;color: white;">Controles</h3>
+            </div>
+           
             <div class="col-sm">
-                <img src="./img/corazon.png" alt="">
+                <img src="./img/esteto.png" class="mx-auto d-block" alt="">
+                <h3 style="text-align: center;color: white;">Tratamientos</h3>
             </div>
 
             <div class="col-sm">
-                <img src="./img/esteto.png" alt="">
-            </div>
-
-            <div class="col-sm">
-                <img src="./img/vacu.png" alt="">
+                <img src="./img/vacu.png" class="mx-auto d-block" alt="">
+                <h3 style="text-align: center;color: white;">Vacunas</h3>
             </div>
         </div>
 
@@ -138,8 +153,52 @@
             <div class="row align-self-center">
                 <div class="col-md float-left">
                     <div class="contacto-content-left">
-                         <h3>Contacto</h3>
+                         <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="well well-sm">
+                                        <form class="form-horizontal" method="post">
+                                            <fieldset>
+                                                <legend class="text-center header">Contactactanos</legend>
                         
+                                                <div class="form-group ">
+                                
+                                                    <div class="col-md-8">
+                                                        <input id="fname" name="name" type="text" placeholder="Ingrese su nombre" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <span class="col-md-1 col-md-offset-2 text-center"></span>
+                                                    <div class="col-md-8">
+                                                        <input id="lname" name="name" type="text" placeholder="Ingrese su apellido" class="form-control">
+                                                    </div>
+                                                </div>
+                        
+    
+                        
+                                                <div class="form-group">
+                                                    <div class="col-md-8">
+                                                        <input id="phone" name="phone" type="text" placeholder="Ingrese su télefono" class="form-control">
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <div class="col-md-8">
+                                                        <textarea class="form-control" id="message" name="message" placeholder="Ingrese su consulta en un par de horas estaremos contestando." rows="7"></textarea>
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="form-group">
+                                                    <div class="col-md-12 text-center">
+                                                        <button type="submit" class="btn btn-primary btn-lg send">Enviar</button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>    
                 </div>  
@@ -155,14 +214,18 @@
     </div>
 </section>
 
-<footer>
-
-</footer>
+<!--Footes-->
+<footer id="sticky-footer" class="flex-shrink-0 py-4 ">
+    <div class="container text-center">
+      <small>2021 Copyright &copy; Constanza Gamarra</small>
+    </div>
+  </footer>
 
   <!--Bootstrap Script-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+<!--Javascript-->
+  <script src="main.js"></script>
 </body>
 </html>
