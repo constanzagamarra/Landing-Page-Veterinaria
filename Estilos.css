@@ -1,0 +1,47 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+:root {
+    --main-color: #00A2AD;
+    --nav:#028892;
+    --buttons: #FDD65D;
+    --details:#F6A800;
+  }
+
+
+#NAV{
+    background-color: var( --nav)!important
+  
+}
+
+a {
+    color: white!important;
+    font-size: large;
+}
+
+#Logo{
+    width: 70px;
+    background-color: #028892!important;
+}
+
+a{ 
+    text-decoration: none;
+}
+
+#Banner{
+    background-color: var(--main-color);
+
+}
+
+#Banner h1{
+    color: white!important;
+    justify-content: center;
+  
+}
+
+#Banner p{
+    color: white!important;
+    text-align:justify;
+}
+
