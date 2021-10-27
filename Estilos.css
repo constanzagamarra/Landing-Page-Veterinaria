@@ -29,19 +29,65 @@ a{
     text-decoration: none;
 }
 
-#Banner{
+#header{
     background-color: var(--main-color);
-
+    min-height:100vh;
 }
 
-#Banner h1{
+#contactobo{
+    background:var(--buttons);
+    border: 1px solid var(--buttons);
+    font-weight: bold;
+}
+
+#serviciosbo{
+    background-color: transparent;
+    border: 2px solid var(--buttons);
+    color: var(--buttons);
+    font-weight: bold;
+}
+
+
+#header h1{
     color: white!important;
     justify-content: center;
   
 }
 
-#Banner p{
+
+
+#header p{
     color: white!important;
     text-align:justify;
 }
 
+#nosotros {
+    background-color: white;
+    color: var(--details);
+}
+
+.card{
+    color: rgb(58, 58, 58);
+}
+
+
+#servicios {
+    background-color: var(--details);
+    background:  url('./img/veterinarian.jpg');
+    background-size:cover ;
+    height: 100vh;
+
+}
+
+#servicios img{
+    width: 50%;
+}
+
+
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
