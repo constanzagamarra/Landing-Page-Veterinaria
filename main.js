@@ -1,30 +1,4 @@
- //Scroll Reveal
- window.sr = ScrollReveal();
- sr.reveal('.navbar',{
-     duration: 2000,
-     origin: 'bottom'
- });
- sr.reveal('.header-content-left',{
-     duration: 2000,
-     origin: 'top',
-     distance: '300px'
- });
- sr.reveal('.header-content-right',{
-     duration: 2000,
-     origin: 'right',
-     distance: '300px'
- });
- sr.reveal('.header-btn',{
-     duration: 2000,
-     origin: 'right',
-     delay: '300px'
- });
- sr.reveal('#testimonial',{
-     duration: 2000,
-     origin: 'left',
-     distance: '300px',
-     viewFactor: 0.2
- });
+
 
  //Smooth Scrolling
 
@@ -36,3 +10,22 @@
          });
      });
  });
+
+
+ //Show
+ let show= document.querySelectorAll(".show")
+
+
+ function scrollShow() {
+     let scrollTop= document.documentElement.scrollTop;
+     for (var i=0; i<show.length; i++){
+         let heightShow= show[i].offsetTop;
+         if (heightShow-1000 < scrollTop){
+             show[i].style.opacity=1;
+             show[i].classList.add("up")
+         }
+     }
+ }
+
+
+ window.addEventListener('scroll', scrollShow)
