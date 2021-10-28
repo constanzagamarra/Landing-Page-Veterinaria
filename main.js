@@ -13,16 +13,16 @@
 
 
  //Show
- let show= document.querySelectorAll(".show")
+ let showt= document.querySelectorAll(".showt")
 
 
  function scrollShow() {
      let scrollTop= document.documentElement.scrollTop;
-     for (var i=0; i<show.length; i++){
-         let heightShow= show[i].offsetTop;
+     for (var i=0; i<showt.length; i++){
+         let heightShow= showt[i].offsetTop;
          if (heightShow+900 < scrollTop){
-             show[i].style.opacity=1;
-             show[i].classList.add("up")
+             showt[i].style.opacity=1;
+             showt[i].classList.add("up")
          }
      }
  }
