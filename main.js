@@ -20,7 +20,7 @@
      let scrollTop= document.documentElement.scrollTop;
      for (var i=0; i<show.length; i++){
          let heightShow= show[i].offsetTop;
-         if (heightShow-1000 < scrollTop){
+         if (heightShow+900 < scrollTop){
              show[i].style.opacity=1;
              show[i].classList.add("up")
          }
