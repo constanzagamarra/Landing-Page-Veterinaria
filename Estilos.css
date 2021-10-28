@@ -65,6 +65,7 @@ a{
 #nosotros {
     background-color: white;
     color: var(--details);
+    min-height:50vh;
 }
 
 .card{
